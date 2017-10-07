@@ -1,0 +1,148 @@
+* {
+	margin: 0;
+	padding: 0;
+
+}
+ul {
+	list-style-type : none;
+}
+body {
+	background: url(http://images.cnblogs.com/cnblogs_com/wenruo/873448/o_esdese.jpg);
+}
+
+#game {
+	position: fixed;
+	width: 800px;
+	height: 800px;
+	top: 50px;
+	left: 100px;
+	opacity: 0.8;
+}
+/**
+ * 整个游戏区域分为左中右三个部分
+ * 左边是下一个方块&游戏介绍 中间是游戏主区域 右边显示分数等信息
+ */
+#left {
+	width: 200px;
+	height: 420px;
+	background-color: black;
+	border-top: 2px solid silver;
+	border-left: 2px solid silver;
+	border-bottom: 2px solid silver;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#next-warp {
+	width: 140px;
+	height: 140px;
+	background-color: pink;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	border-radius: 25px;
+}
+#next {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+#intro-warp {
+	width: 140px;
+	height: 160px;
+	background-color: pink;
+	position: relative;
+	top: 220px;
+	left: 30px;
+	border-radius:25px;
+}
+#intro {
+	width: 120px;
+	height: 160px;
+	position: absolute;
+	top: 12px;
+	left: 12px;
+}
+#middle {
+	width: 240px;
+	height: 420px;
+	background-color: pink;
+	border-top: 2px solid silver;
+	border-bottom: 2px solid silver;
+	position: absolute;
+	top: 0px;
+	left: 200px;
+}
+#main {
+	width: 200px;
+	height: 400px;
+	background-color: black;
+	position: absolute;
+	top: 0px;
+	left: 20px;
+}
+#right {
+	width: 200px;
+	height: 420px;
+	background-color: black;
+	border-top: 2px solid silver;
+	border-right: 2px solid silver;
+	border-bottom: 2px solid silver;
+	position: absolute;
+	top: 0px;
+	left: 440px;
+}
+#info {
+	width: 140px;
+	height: 300px;
+	background-color: pink;
+	border-radius:25px;
+	padding: 10px;
+	position: absolute;
+	top: 50px;
+	left: 20px;
+}
+#title {
+	font-size: 27px;
+}
+.info {
+	margin: 20px 0;
+}
+#time, #score {
+	color: yellow;
+	padding: 10px;
+}
+#pause {
+	width: 100px;
+	height: 30px;
+	background-color: pink;
+	border-radius:25px;
+	position: absolute;
+	top: 220px;
+	left: 50px;
+}
+#restart {
+	width: 100px;
+	height: 30px;
+	background-color: pink;
+	border-radius:25px;
+	position: absolute;
+	top: 270px;
+	left: 50px;
+}
+.none, .current, .done {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	box-sizing: border-box;
+}
+.current {
+	background-color: #99ffcc;
+	border: 1px solid red;
+}
+.done {
+	background-color: blue;
+	border: 1px solid black;
+}

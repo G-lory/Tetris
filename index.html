@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>俄罗斯方块 by G-lory</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+	<div id="game">
+		<div id="left">
+			<div id="next-warp">
+				<div id="next"></div>
+			</div>
+			<div id="intro-warp">
+				<div id="intro">
+					<img src="http://images.cnblogs.com/cnblogs_com/wenruo/873448/o_tetris-intro.png" alt="游戏说明：上下左右控制移动，空格暂停">
+				</div>
+			</div>
+		</div>
+		<div id="middle">
+			<div id="main"></div>
+		</div>
+		<div id="right">
+			<div id="info">
+				<div class="info"><span id="title">俄罗斯方块</span></div>
+				<div class="info">已用时：<span id="time">0</span>秒</div>
+				<div class="info">已得分：<span id="score">0</span>分</div>
+			</div>
+			<button id="pause" onclick="game.pause(); this.blur()">暂停</button>
+			<button id="restart" onclick="game.restart(); this.blur()">重新开始</button>
+		</div>
+	</div>
+	<script src="js/util.js"></script>
+	<script src="js/square.js"></script>
+	<script src="js/field.js"></script>
+	<script src="js/tetrisGame.js"></script>
+	<script type="text/javascript">
+		var game = new TetrisGame()
+		game.start()
+	</script> 
+	<audio src="audio/clearLine.mp3" controls="controls" preload id="clearLine" hidden />
+	<audio src="audio/move.mp3" controls="controls" preload id="move" hidden />
+	<audio src="audio/gameOver.mp3" controls="controls" preload id="gameOver" hidden />
+</body>
+</html>
